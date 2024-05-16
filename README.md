@@ -105,6 +105,10 @@ mygolfhub/
 └── README.md
 ```
 
+## Citations
+
+Logo created for free from (Adobe's Free Logo Generator)[https://www.adobe.com/express/create/logo]
+
 ## Notes
 
 All images used will either be royalty free and tagged in the citations page and/or in the code OR the images will be my own.
