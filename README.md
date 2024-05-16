@@ -67,4 +67,4 @@ npm install
 All images used will either be royalty free and tagged in the citations page and/or in the code OR the images will be my own.
 
 ## Updates
- 5/16 - Initial push to GitHub for webpage. Flushing out ideas for how to develop
+ 5/16 - Initial push to GitHub for webpage. Flushing out ideas for how to develop. All basic setup - backend has no functionality, frontend is default React code.
