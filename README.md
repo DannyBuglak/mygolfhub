@@ -89,7 +89,10 @@ mygolfhub/
 │   ├── src/
 │   │   ├── assets/
 │   │   ├── components/
+│   │   │   └── NavBar.js
 │   │   ├── pages/
+│   │   │   ├── Home.js
+│   │   │   └── Login.js
 │   │   ├── services/
 │   │   ├── styles/
 │   │   ├── App.js
