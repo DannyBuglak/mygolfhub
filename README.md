@@ -107,7 +107,7 @@ mygolfhub/
 
 ## Citations
 
-Logo created for free from (Adobe's Free Logo Generator)[https://www.adobe.com/express/create/logo]
+Logo created for free from [Adobe's Free Logo Generator](https://www.adobe.com/express/create/logo)
 
 ## Notes
 
