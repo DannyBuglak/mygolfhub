@@ -50,7 +50,7 @@ cd mygolfhub
 ```bash
 cd backend
 python -m venv venv
-venv\Scripts\activate
+venv\Scripts\activate # On Mac use `source venv/bin/activate`
 pip install -r requirements.txt
 ```
 
@@ -61,6 +61,49 @@ npm install
 ```
 
 *Further steps will be added later*
+
+## Directory Structure
+
+*Updated as development is made. Will try to keep it as up-to-date as possible.*
+
+```plaintext
+mygolfhub/
+├── backend/
+│   ├── app/
+│   │   ├── database/
+│   │   │   ├── create_tables/
+│   │   │   │   ├── users.sql
+│   │   ├── utils/
+│   │   │   ├── database/
+│   │   │   │   ├── database.py
+│   │   ├── __init__.py
+│   │   ├── routes.py
+│   ├── venv/
+│   ├── app.py
+│   ├── requirements.txt
+│   └── Dockerfile
+├── frontend/
+│   ├── node_modules/
+│   ├── public/
+│   │   ├── index.html
+│   ├── src/
+│   │   ├── assets/
+│   │   ├── components/
+│   │   ├── pages/
+│   │   ├── services/
+│   │   ├── styles/
+│   │   ├── App.js
+│   │   ├── index.js
+│   ├── .gitignore
+│   ├── package-lock.json
+│   ├── package.json
+│   ├── README.md
+│   └── Dockerfile
+├── docker-compose.yml
+├── .gitattributes
+├── .gitignore
+└── README.md
+```
 
 ## Notes
 
