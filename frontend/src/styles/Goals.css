@@ -1,0 +1,78 @@
+.goals-container {
+    max-width: 40vw;
+    margin: 0 auto;
+    background: #fff;
+    padding: 2em;
+    border-radius: 0.2em;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 2rem;
+}
+
+h1 {
+    text-align: center;
+}
+
+.goal-input {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+.goal-input input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.goal-input button {
+    padding: 1em;
+    background-color: #4f612a;
+    color: white;
+    border: none;
+    border-radius: 0.2em;
+    cursor: pointer;
+}
+
+.goal-input button:hover {
+    background-color: #647247;
+}
+
+.goals-list {
+    margin-top: 2em;
+    list-style: none;
+    padding: 0;
+}
+
+.goal-item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    background: #f9f9f9;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.goal-item input[type="checkbox"] {
+    margin-right: 1em;
+}
+
+.goal-item span {
+    flex: 1;
+}
+
+.goal-item .completed {
+    text-decoration: line-through;
+    color: #6b8832;
+}
+
+.goal-item .icon {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    margin-left: 10px;
+}

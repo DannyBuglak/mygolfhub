@@ -20,6 +20,7 @@ This project is built using:
 - **Backend**: Flask
 - **Database**: MySQL
 - **Containerization**: Docker
+- **Deployment**: *To Be Determined*
 
 ## Features
 
@@ -72,10 +73,13 @@ mygolfhub/
 │   ├── app/
 │   │   ├── database/
 │   │   │   ├── create_tables/
-│   │   │   │   └── users.sql
+│   │   │   │   ├── bag.sql
+│   │   │   │   ├── goals.sql
+│   │   │   │   ├── scorecards.sql
+│   │   │   └── └── users.sql
 │   │   ├── utils/
 │   │   │   ├── database/
-│   │   │   │   └── database.py
+│   │   │   └── └── database.py
 │   │   ├── __init__.py
 │   │   └── routes.py
 │   ├── venv/
@@ -91,7 +95,9 @@ mygolfhub/
 │   │   └── robots.txt
 │   ├── src/
 │   │   ├── assets/
-│   │   │   ├── course.jpg
+│   │   │   ├── delete-icon.png
+│   │   │   ├── eagle_eye.jpg
+│   │   │   ├── edit-icon.png
 │   │   │   ├── MyGolfHub_transparent.png
 │   │   │   ├── MyGolfHub_transparent2.png
 │   │   │   └── MyGolfHub.png
@@ -109,6 +115,7 @@ mygolfhub/
 │   │   ├── styles/
 │   │   │   ├── About.css
 │   │   │   ├── App.css
+│   │   │   ├── Goals.css
 │   │   │   ├── Header.css
 │   │   │   ├── Home.css
 │   │   │   ├── index.css
@@ -136,6 +143,10 @@ Logo created for free from [Adobe's Free Logo Generator](https://www.adobe.com/e
 
 Golf course image taken by me from my golf round at [Eagle Eye Golf Course](https://eagleeyegolfclub.com/).
 
+Delete icon found at [Flaticon](https://www.flaticon.com/free-icon/trash-can_2891491).
+
+Edit icon found at [Flaticon](https://www.flaticon.com/free-icon/edit_32355).
+
 ## Notes
 
 All images used will either be royalty free and tagged in the citations page and/or in the code *or* the images will be my own.
@@ -144,3 +155,5 @@ All images used will either be royalty free and tagged in the citations page and
  - **5/16**: Initial push to GitHub for webpage. Flushing out ideas for how to develop. All basic setup - backend has no functionality, frontend is default React code.
 
  - **5/19**: Frontend work, Home page started, Nav bar start up, logo and images added, About page created.
+
+ - **5/20**: Goals page functionality on frontend (still need to connect to backend)
