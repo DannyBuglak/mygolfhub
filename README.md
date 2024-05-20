@@ -134,11 +134,11 @@ mygolfhub/
 
 Logo created for free from [Adobe's Free Logo Generator](https://www.adobe.com/express/create/logo).
 
-Golf course image taken from my golf round at [Eagle Eye Golf Course](https://eagleeyegolfclub.com/).
+Golf course image taken by me from my golf round at [Eagle Eye Golf Course](https://eagleeyegolfclub.com/).
 
 ## Notes
 
-All images used will either be royalty free and tagged in the citations page and/or in the code OR the images will be my own.
+All images used will either be royalty free and tagged in the citations page and/or in the code *or* the images will be my own.
 
 ## Updates
  - **5/16**: Initial push to GitHub for webpage. Flushing out ideas for how to develop. All basic setup - backend has no functionality, frontend is default React code.
