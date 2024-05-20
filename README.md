@@ -72,12 +72,12 @@ mygolfhub/
 │   ├── app/
 │   │   ├── database/
 │   │   │   ├── create_tables/
-│   │   │   │   ├── users.sql
+│   │   │   │   └── users.sql
 │   │   ├── utils/
 │   │   │   ├── database/
-│   │   │   │   ├── database.py
+│   │   │   │   └── database.py
 │   │   ├── __init__.py
-│   │   ├── routes.py
+│   │   └── routes.py
 │   ├── venv/
 │   ├── app.py
 │   ├── requirements.txt
@@ -85,26 +85,44 @@ mygolfhub/
 ├── frontend/
 │   ├── node_modules/
 │   ├── public/
+│   │   ├── favicon.ico
 │   │   ├── index.html
+│   │   ├── manifest.json
+│   │   └── robots.txt
 │   ├── src/
 │   │   ├── assets/
+│   │   │   ├── course.jpg
+│   │   │   ├── MyGolfHub_transparent.png
+│   │   │   ├── MyGolfHub_transparent2.png
+│   │   │   └── MyGolfHub.png
 │   │   ├── components/
+│   │   │   ├── Header.js
 │   │   │   └── NavBar.js
 │   │   ├── pages/
+│   │   │   ├── About.js
 │   │   │   ├── Home.js
 │   │   │   └── Login.js
 │   │   ├── services/
 │   │   ├── styles/
+│   │   │   ├── App.css
+│   │   │   ├── Header.css
+│   │   │   ├── Home.css
+│   │   │   ├── index.css
+│   │   │   ├── Login.css
+│   │   │   └── Navbar.css
 │   │   ├── App.js
+│   │   ├── App.test.js
 │   │   ├── index.js
+│   │   ├── reportWebVitals.js
+│   │   └── setupTests.js
 │   ├── .gitignore
+│   ├── Dockerfile
 │   ├── package-lock.json
 │   ├── package.json
-│   ├── README.md
-│   └── Dockerfile
-├── docker-compose.yml
+│   └── README.md
 ├── .gitattributes
 ├── .gitignore
+├── docker-compose.yml
 └── README.md
 ```
 
@@ -112,9 +130,13 @@ mygolfhub/
 
 Logo created for free from [Adobe's Free Logo Generator](https://www.adobe.com/express/create/logo)
 
+Golf course image taken from my golf round at [Eagle Eye Golf Course](https://eagleeyegolfclub.com/)
+
 ## Notes
 
 All images used will either be royalty free and tagged in the citations page and/or in the code OR the images will be my own.
 
 ## Updates
- - **5/16** - Initial push to GitHub for webpage. Flushing out ideas for how to develop. All basic setup - backend has no functionality, frontend is default React code.
+ - **5/16**: Initial push to GitHub for webpage. Flushing out ideas for how to develop. All basic setup - backend has no functionality, frontend is default React code.
+
+ - **5/19**: Frontend work, Home page started, Nav bar start up, logo and images added, directory in README updated.
