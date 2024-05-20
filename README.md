@@ -100,10 +100,14 @@ mygolfhub/
 │   │   │   └── NavBar.js
 │   │   ├── pages/
 │   │   │   ├── About.js
+│   │   │   ├── Bag.js
+│   │   │   ├── Goals.js
 │   │   │   ├── Home.js
-│   │   │   └── Login.js
+│   │   │   ├── Login.js
+│   │   │   └── Scorecards.js
 │   │   ├── services/
 │   │   ├── styles/
+│   │   │   ├── About.css
 │   │   │   ├── App.css
 │   │   │   ├── Header.css
 │   │   │   ├── Home.css
@@ -128,9 +132,9 @@ mygolfhub/
 
 ## Citations
 
-Logo created for free from [Adobe's Free Logo Generator](https://www.adobe.com/express/create/logo)
+Logo created for free from [Adobe's Free Logo Generator](https://www.adobe.com/express/create/logo).
 
-Golf course image taken from my golf round at [Eagle Eye Golf Course](https://eagleeyegolfclub.com/)
+Golf course image taken from my golf round at [Eagle Eye Golf Course](https://eagleeyegolfclub.com/).
 
 ## Notes
 
@@ -139,4 +143,4 @@ All images used will either be royalty free and tagged in the citations page and
 ## Updates
  - **5/16**: Initial push to GitHub for webpage. Flushing out ideas for how to develop. All basic setup - backend has no functionality, frontend is default React code.
 
- - **5/19**: Frontend work, Home page started, Nav bar start up, logo and images added, directory in README updated.
+ - **5/19**: Frontend work, Home page started, Nav bar start up, logo and images added, About page created.

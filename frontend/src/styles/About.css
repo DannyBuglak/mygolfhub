@@ -1,0 +1,24 @@
+.about-container {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+}
+
+.about-section {
+    flex: 1;
+    margin: 1rem;
+    padding: 2rem;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.about-section h2 {
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.about-section p {
+    color: #666;
+    line-height: 1.6;
+}
