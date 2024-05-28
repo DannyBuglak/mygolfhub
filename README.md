@@ -61,6 +61,13 @@ cd ../frontend
 npm install
 ```
 
+4. **Start the website:**
+```bash
+cd ..
+docker-compose build
+docker-compose up
+```
+
 *Further steps will be added later*
 
 ## Directory Structure
@@ -83,6 +90,7 @@ mygolfhub/
 │   │   ├── __init__.py
 │   │   └── routes.py
 │   ├── venv/
+│   ├── .dockerignore
 │   ├── app.py
 │   ├── requirements.txt
 │   └── Dockerfile
@@ -110,8 +118,10 @@ mygolfhub/
 │   │   │   ├── Goals.js
 │   │   │   ├── Home.js
 │   │   │   ├── Login.js
+│   │   │   ├── Register.js
 │   │   │   └── Scorecards.js
 │   │   ├── services/
+│   │   │   └── api.js
 │   │   ├── styles/
 │   │   │   ├── About.css
 │   │   │   ├── App.css
@@ -120,12 +130,15 @@ mygolfhub/
 │   │   │   ├── Home.css
 │   │   │   ├── index.css
 │   │   │   ├── Login.css
-│   │   │   └── Navbar.css
+│   │   │   ├── Navbar.css
+│   │   │   ├── Register.css
+│   │   │   └── Scorecards.css
 │   │   ├── App.js
 │   │   ├── App.test.js
 │   │   ├── index.js
 │   │   ├── reportWebVitals.js
 │   │   └── setupTests.js
+│   ├── .dockerignore
 │   ├── .gitignore
 │   ├── Dockerfile
 │   ├── package-lock.json
@@ -156,4 +169,6 @@ All images used will either be royalty free and tagged in the citations page and
 
  - **5/19**: Frontend work, Home page started, Nav bar start up, logo and images added, About page created.
 
- - **5/20**: Goals page functionality on frontend (still need to connect to backend)
+ - **5/20**: Goals page functionality on frontend (still need to connect to backend).
+
+ - **5/28**: Docker fix, Login CSS, Registration page, and work on registration backend functionality and API integration. Still getting an axios error with the backend.

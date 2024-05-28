@@ -10,7 +10,7 @@ function About() {
                 <p>Information about the website</p>
             </div>
             <div className="about-section">
-                <h2>About Me</h2>
+                <h2>About the Developer</h2>
                 <p>Information about me</p>
             </div>
         </div>

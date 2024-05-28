@@ -1,26 +1,23 @@
 # Use the official Node.js image from the Docker Hub
 FROM node:14
 
-# Set the working directory in the container
-WORKDIR /app
+# Set the working directory
+WORKDIR /src
 
-# Copy the package.json and package-lock.json into the container
-COPY package*.json ./
+# Copy package.json and package-lock.json into the container at /app
+COPY package*.json /src/
 
-# Install the dependencies
+# Install any dependencies
 RUN npm install
 
 # Copy the rest of the application code into the container
-COPY . .
+COPY . /src/
 
-# Build the React application
+# Build the app
 RUN npm run build
-
-# Install serve to serve the build directory
-RUN npm install -g serve
 
 # Expose the port the app runs on
 EXPOSE 3000
 
-# Serve the application
-CMD ["serve", "-s", "build", "-l", "3000"]
+# Serve the app
+CMD ["npm", "start"]

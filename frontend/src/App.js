@@ -12,6 +12,7 @@ import Goals from './/pages/Goals';
 import Bag from './/pages/Bag'; 
 import About from './/pages/About'; 
 import Login from './/pages/Login'; 
+import Register from './/pages/Register'; 
 
 import './/styles/App.css';
 
@@ -28,6 +29,7 @@ function App() {
           <Route path="/bag" element={<Bag />} />
           <Route path="/about" element={<About />} />
           <Route path="/login" element={<Login />} />
+          <Route path="/register" element={<Register />} />
         </Routes>
         
       </div>
