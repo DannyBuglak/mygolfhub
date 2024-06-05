@@ -13,9 +13,10 @@ main = Blueprint('main', __name__)
 '''
 Process the registration of a user
 '''
-@main.route('/api/processregister', methods=["POST", "GET"])
+@main.route('/api/processregister', methods=["POST"])
 def processregister():
     data = request.get_json()
+    print(data)
     username = data.get('username')
     password = data.get('password')
     confirmPassword = data.get('confirmPassword')
@@ -27,4 +28,19 @@ def processregister():
         return jsonify({'error': 'Passwords do not match'}), 400
 
     # TODO: LOGIC FOR SAVING USER TO DATABASE WILL BE HERE
-    return jsonify({'message': 'Registration successful'}), 201
+    
+    return jsonify({'message': 'Registration successful'}), 200
+
+
+'''
+Process the login of a user
+'''
+@main.route('/api/processlogin', methods=["POST"])
+def processlogin():
+    data = request.get_json()
+    username = data.get('username')
+    password = data.get('password')
+
+    # TODO: PROCESS LOGIN HERE
+
+    return jsonify({'message': 'Login successful'}), 200

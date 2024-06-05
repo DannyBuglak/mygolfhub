@@ -7,7 +7,7 @@ function Login() {
       <h2>Login</h2>
       <form className="login-form">
         <label>
-          Username:
+          Email:
           <input type="text" name="username" />
         </label>
         <label>

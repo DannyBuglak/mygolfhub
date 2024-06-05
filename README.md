@@ -172,3 +172,5 @@ All images used will either be royalty free and tagged in the citations page and
  - **5/20**: Goals page functionality on frontend (still need to connect to backend).
 
  - **5/28**: Docker fix, Login CSS, Registration page, and work on registration backend functionality and API integration. Still getting an axios error with the backend.
+
+ - **6/05**: Bridge from frontend to backend working. Registration API connection working. Start to creating database. Various edits in docker-compose and other config files.

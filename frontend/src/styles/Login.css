@@ -24,6 +24,7 @@ CSS for the login page
 
 .login-form label {
     display: block;
+    width: 100%;
     margin-bottom: 1em;
 }
 

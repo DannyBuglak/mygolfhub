@@ -15,7 +15,7 @@ function Register() {
             const response = await register(username, password, confirmPassword);
             console.log('Registration successful', response);
         } catch (error) {
-            setError('Registration failed. Try again');
+            setError('Registration failed. Try again.');
         }
     };
 
@@ -26,7 +26,7 @@ function Register() {
             <h2>Register</h2>
             <form className="register-form" onSubmit={handleRegister}>
                 <label>
-                Username:
+                Email:
                 <input
                     type="text"
                     name="username"
