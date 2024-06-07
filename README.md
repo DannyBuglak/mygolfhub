@@ -68,6 +68,12 @@ docker-compose build
 docker-compose up
 ```
 
+5. ** To completely restart the website containers:**
+```bash
+docker-compose down -v
+docker-compose up --build
+```
+
 *Further steps will be added later*
 
 ## Directory Structure
@@ -174,3 +180,5 @@ All images used will either be royalty free and tagged in the citations page and
  - **5/28**: Docker fix, Login CSS, Registration page, and work on registration backend functionality and API integration. Still getting an axios error with the backend.
 
  - **6/05**: Bridge from frontend to backend working. Registration API connection working. Start to creating database. Various edits in docker-compose and other config files.
+
+ - **6/06**: Database in docker created and docker-compose update. Registration saving username & hashed password to DB. Issue for live updates with React not happening.

@@ -59,3 +59,11 @@ CSS for the registration page
 .register-form .register-btn:hover {
     background-color: #6c853b;
 }
+
+.login-link {
+    background-color: #6c853b;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}

@@ -4,6 +4,9 @@ import json
 import random
 import functools
 
+from .utils.database.database import Database
+db = Database()
+
 main = Blueprint('main', __name__)
 
 ###############################################
@@ -28,8 +31,12 @@ def processregister():
         return jsonify({'error': 'Passwords do not match'}), 400
 
     # TODO: LOGIC FOR SAVING USER TO DATABASE WILL BE HERE
+    createUser = db.createUser(email = username, password = password)
     
-    return jsonify({'message': 'Registration successful'}), 200
+    if createUser.get('success') == 1:
+        return jsonify({'message': 'Registration successful'}), 200
+    
+    return jsonify({'message': 'Registration Failure'}), 500
 
 
 '''
