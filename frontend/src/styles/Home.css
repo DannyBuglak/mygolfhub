@@ -1,16 +1,31 @@
-.home-container {
-    text-align: center;
-    margin-top: 50px;
+.introduction {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
 }
 
-.home-title {
+.welcome-msg {
     font-size: 2.5em;
-    color: #333;
+    padding: 0;
+    margin: 0;
+    padding-top: 0.5em;
 }
 
-.home-description {
-    font-size: 1.2em;
-    color: #666;
-    margin-top: 20px;
+.app-logo-home {
+    height: 15em;
+    width: auto;
+    padding: 0;
 }
-  
+
+/* Short description about the website */
+.short-desc {
+    font-size: 1.4em;
+    padding: 0;
+    margin: 0;
+}
+
+.feature-desc {
+    font-size: 0.9em;
+}

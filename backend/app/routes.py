@@ -14,6 +14,27 @@ main = Blueprint('main', __name__)
 ###############################################
 
 '''
+Retrieves the email from the session if available
+'''
+@main.route('/api/getuser', methods=['GET'])
+def getUser():
+    # Decrypt the email if it is in the current session cookie
+    if 'email' in session:
+        return db.reversibleEncrypt('decrypt', session['email'])
+    else:
+        return 'Unknown'
+    
+
+'''
+Log the user out, remove the email from the session and redirect to the login screen
+'''
+@main.route('/logout')
+def logout():
+	session.pop('email', default=None)
+	return redirect('/')
+
+
+'''
 Process the registration of a user
 '''
 @main.route('/api/processregister', methods=["POST"])
@@ -30,7 +51,6 @@ def processregister():
     if password != confirmPassword:
         return jsonify({'error': 'Passwords do not match'}), 400
 
-    # TODO: LOGIC FOR SAVING USER TO DATABASE WILL BE HERE
     createUser = db.createUser(email = username, password = password)
     
     if createUser.get('success') == 1:
@@ -45,9 +65,16 @@ Process the login of a user
 @main.route('/api/processlogin', methods=["POST"])
 def processlogin():
     data = request.get_json()
+    print(data)
     username = data.get('username')
     password = data.get('password')
 
-    # TODO: PROCESS LOGIN HERE
+    # Authenticate the login
+    loginAuth = db.authenticate(email=username, password=password)
 
-    return jsonify({'message': 'Login successful'}), 200
+    if loginAuth.get('success') == 1:
+        session['email'] = db.reversibleEncrypt('encrypt', username)
+        return jsonify({'message': 'Login successful'}), 200
+
+    return jsonify({'message': 'Login failure'}), 500
+

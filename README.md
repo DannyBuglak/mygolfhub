@@ -116,6 +116,7 @@ mygolfhub/
 │   │   │   ├── MyGolfHub_transparent2.png
 │   │   │   └── MyGolfHub.png
 │   │   ├── components/
+│   │   │   ├── Features.js
 │   │   │   ├── Header.js
 │   │   │   └── NavBar.js
 │   │   ├── pages/
@@ -131,6 +132,7 @@ mygolfhub/
 │   │   ├── styles/
 │   │   │   ├── About.css
 │   │   │   ├── App.css
+│   │   │   ├── Features.css
 │   │   │   ├── Goals.css
 │   │   │   ├── Header.css
 │   │   │   ├── Home.css
@@ -182,3 +184,17 @@ All images used will either be royalty free and tagged in the citations page and
  - **6/05**: Bridge from frontend to backend working. Registration API connection working. Start to creating database. Various edits in docker-compose and other config files.
 
  - **6/06**: Database in docker created and docker-compose update. Registration saving username & hashed password to DB. Issue for live updates with React not happening.
+
+ - **6/17**: Live UI reloading fixed. Basic home page look finished (until I decide to update UI). Added TODO section in README. Register and login working. Need to fix storing the email in session (returning 200 OK but no email stored).
+
+### TODO
+
+ - Fix error storing email in session.
+ - Shave off everything after '@' in the welcome message on the home page when the user is logged in.
+ - Update CSS for when user logs in to make button look better.
+ - Redirect user to home page after logging in successfully.
+ - Handle erronous logins.
+ - Add descriptive comments in all files.
+ - Create the bag page layout (HTML & CSS).
+ - Update Scorecards page to be more simplistic. Make sure user can save and view scorecards.
+ - Eventually add a "Profile" page.

@@ -12,7 +12,9 @@ const api = axios.create({
     }
 });
 
+//
 // Register API endpoint
+//
 export const register = async (username, password, confirmPassword) => {
     try {
         const response = await api.post('/processregister', {username, password, confirmPassword});
@@ -32,3 +34,34 @@ export const register = async (username, password, confirmPassword) => {
         throw error;
     }
 };
+
+
+
+//
+// Login API endpoint
+//
+export const login = async (username, password) => {
+    try {
+        const response = await api.post('/processlogin', { username, password });
+        return response.data;
+    } catch (error) {
+        console.error("Error processing login: ", error);
+        return null;
+    }
+}
+
+
+
+//
+// Get User API endpoint
+//
+export const fetchUser = async() => {
+    try {
+        const response = await api.get('/getuser');
+        console.log("RESPONSE:", response);
+        return response.data.username;
+    } catch (error) {
+        console.error("Error fetching username: ", error);
+        return null;
+    }
+}
