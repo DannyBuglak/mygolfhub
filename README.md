@@ -68,7 +68,7 @@ docker-compose build
 docker-compose up
 ```
 
-5. ** To completely restart the website containers:**
+5. **To completely restart the website containers:**
 ```bash
 docker-compose down -v
 docker-compose up --build
